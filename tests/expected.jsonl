@@ -1,0 +1,13 @@
+{"status":"ready"}
+{"states":[]}
+{"states":[[4,2],[4,2],[3,3],[3,3],[2,3]]}
+{"cost":-1,"edge_ids":[2,3,4],"components":2}
+{"cost":-1,"edge_ids":[4,2,3],"components":2}
+{"cost":3000000000,"edge_ids":[0,1,2],"components":1}
+{"cost":3000000000,"edge_ids":[0,1,2],"components":1}
+{"component":[10,10,20,20,30],"condensation":[[10,20],[20,30]]}
+{"acyclic":true,"order":[0,1,2,3,4]}
+{"acyclic":false,"order":[]}
+{"acyclic":true,"distance":[0,3,-4,0,null,null],"parent_edge":[-1,0,2,4,-1,-1]}
+{"acyclic":false,"distance":[],"parent_edge":[]}
+{"status":"ready"}

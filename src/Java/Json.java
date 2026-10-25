@@ -4,11 +4,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.StringJoiner;
 
-/**
- * Provided JSON input/output for the assignment's integer-valued requests.
- * Use this parser as supplied; you do not need to implement or modify it.
- * Use Input.java to obtain numbers and arrays in Algorithms.java.
- */
 final class Json {
     private final String text;
     private int position;
@@ -148,7 +143,6 @@ final class Json {
                         position += 4;
                         break;
                     default:
-                        // Escaped quote, backslash or slash.
                         break;
                 }
             }
@@ -199,7 +193,6 @@ final class Json {
     }
 
     private static String writeArray(Object value) {
-        // Internal transport detail: handles primitive and nested Java arrays.
         StringJoiner elements = new StringJoiner(",", "[", "]");
         int length = java.lang.reflect.Array.getLength(value);
         for (int i = 0; i < length; i++) {
